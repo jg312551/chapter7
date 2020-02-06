@@ -25,8 +25,8 @@ public class repairName {
                 name = c + name.substring(1,name.length());
             }
 
-            else{
 
+            else{
                 if(name.charAt(i)== ' '){
                     ++i;
                     c = name.charAt(i);
