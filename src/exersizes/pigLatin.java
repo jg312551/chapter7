@@ -9,6 +9,8 @@ public class pigLatin {
         Scanner input = new Scanner(System.in);
         char hold;
         char [] vowels ={'a','e','i','o','u'};
+        int counter=0;
+
 
 
         System.out.print("enter a word >>>>");
@@ -22,12 +24,18 @@ public class pigLatin {
                 if(hold == vowels[j]){
                     str.append(Character.toString(hold));
                 }
+               else{
+                    ++counter;
+                    System.out.println(counter);
+                }
             }
-
-
-
+            if(counter == 5){
+                str.append(Character.toString(hold));
+            }
+            counter =0;
 
         }
+        System.out.println(str);
 
     }
 }
