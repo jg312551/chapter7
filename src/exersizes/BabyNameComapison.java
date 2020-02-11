@@ -8,8 +8,8 @@ public class BabyNameComapison {
         String name1;
         String name2;
         String name3;
-        String combanation;
 
+        StringBuilder str= new StringBuilder("baby names: ");
 
         System.out.println("enter name number 1 >>>>");
         name1=input.nextLine();
@@ -19,17 +19,37 @@ public class BabyNameComapison {
         name3=input.nextLine();
 
 
-        System.out.println(name1+name1);
-        System.out.println(name1+name2);
-        System.out.println(name1+name3);
+      str.append(name1);
+      str.append(name2);
+      str.append(" ");
 
-        System.out.println(name2+name1);
-        System.out.println(name2+name2);
-        System.out.println(name2+name3);
+      str.append(name1);
+      str.append(name3);
+      str.append(" ");
 
-        System.out.println(name3+name1);
-        System.out.println(name3+name2);
-        System.out.println(name3+name3);
+      str.append(name2);
+      str.append(name1);
+      str.append(" ");
+
+      str.append(name2);
+      str.append(name3);
+      str.append(" ");
+
+      str.append(name3);
+      str.append(name1);
+      str.append(" ");
+
+      str.append(name3);
+      str.append(name2);
+      System.out.println(str);
+
+
+
+
+
+
+
+
 
 
 

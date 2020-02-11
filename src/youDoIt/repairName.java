@@ -10,6 +10,7 @@ public class repairName {
         char c;
 
 
+
         Scanner input= new Scanner(System.in);
 
         System.out.print("please enter your first name >>>>");
